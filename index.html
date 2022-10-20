@@ -11,11 +11,12 @@
  
     <style>
     img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
     h3 {text-align: center;}
+    br{line-height: 50%;}
     
     div {text-align: center;
     padding: 25px;
@@ -31,10 +32,22 @@
     margin-bottom: 4%;
     background-color:oldlace;
     }
+    svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: calc(100%);
+    }
+    .responsive {
+    width: 100%;
+    height: auto;
+    }
 
     </style>
 
-<h1 style="font-family: times">Merhaba</h1>
+<h1 style="font-family: times">Veri Günlüğü</h1>
 <!--<h1 style="font-family: Cambria">Merhaba</h1>
 border: 1px floralwhite;
 
@@ -43,16 +56,53 @@ pre {text-align: center;}
 -->
 
 <div>
-    <pre align="left">2</pre> 
+    <p style="text-align:left; font-family: monospace;"> 
+        3
+        <span style="float:right;">
+            19.10.2022
+        </span>
+    </p>
+
+    <h3>COVID ve Kiralık Ofisler</h3>
+
+    <p><em>ABD verilerine göre, COVID-19 pandemisi öncesine kıyasla:</em></p>
+
+
+    <p>Toplam Kiralanan M^2 Miktarı ⬇</p>
+    <p>Piyasadaki Tutulmuş Kiralık Ofis % ⬇</p>
+    <p>3 yıldan az sürecek kira sözleşmeleri % ⬆</p>
+
+
+    <img src="img/active_leases_2022.png" class="responsive" width="500">
+
+    <img src="img/ny_vs_other10_occupancy_rate.png" class="responsive" width="500">
+
+    <img src="img/lease_duration_changes_2022.png" class="responsive" width="500">
+
+    <pre>Kaynak: WORK FROM HOME AND THE OFFICE REAL ESTATE APOCALYPSE, Gupta et al.,
+        https://www.nber.org/system/files/working_papers/w30526/w30526.pdf</pre>
+
+</div>
+
+<div>
+
+    <p style="text-align:left; font-family: monospace;"> 
+        2
+        <span style="float:right;">
+            03.10.2022
+        </span>
+    </p>
+
+    <pre><span class="inner-pre" style="font-size: 11px">  </span></pre>
+
     <h3>İSO: Eylül 2022 PMI skoru 46,9</h3>
     <h4>Türkiye PMI® İmalat Sanayi Raporu - Üretim Endeksi</h4>
-    <p align="right">10.03.2022</p>
+    
     <p><em>Üretiminiz bir ay önvesine göre nasıl değişti?</em></p>
 
 
-    <img src="img/iso_pmi_092022.png" class="center" width="500">
+    <img src="img/iso_pmi_092022.png" class="responsive" width="500">
 
-    <bre>
 
     <p><i> "Manşet gösterge; yeni siparişler, fabrika çıkışları, istihdam, tedarikçilerin
         teslim süresi ve satın alma stokları gibi göstergelerden
@@ -74,12 +124,19 @@ pre {text-align: center;}
 
 
 <div>
-    <pre align="left">1</pre>
+    
+    <p style="text-align:left; font-family: monospace;"> 
+        1
+        <span style="float:right;">
+            29.09.2022
+        </span>
+    </p>
+    <pre><span class="inner-pre" style="font-size: 11px">  </span></pre>
+    
     <h3>%48 daha az değerli Türk Lirası - Big Mac Endeksi, Haziran 2022</h3>
 
-    <p align="right">29.09.2022</p>
 
-    <img src="img/big_mac_index_haz_2022.png" alt="Kaynak: The Economist, Haziran 2022" class="center" width="500"> 
+    <img src="img/big_mac_index_haz_2022.png" alt="Kaynak: The Economist, Haziran 2022" class="responsive" width="500"> 
     
     <p>The Economist'in derlediği Haziran 2022 verilerine göre, McDonald's Big Mac'inin Türkiye'deki fiyatı 47.00 lira iken ABD'de ise 5.15 dolar.</p>
     <pre>
