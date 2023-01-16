@@ -4,6 +4,10 @@
 <head>  
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Sofia+Sans&display=swap" rel="stylesheet">
 </head>
 
 
@@ -29,20 +33,24 @@
         white-space: pre-wrap;
     }
     
-    div {text-align: center;
-    padding: 25px;
-    padding-top: 5px;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    
-    margin: 8%;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    background-color:oldlace;
+    /* Content Container */
+    .content {
+        text-align: center;
+        padding: 25px;
+        padding-top: 5px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+        
+        margin: 8%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        background-color:oldlace;
+        border-radius: 2px;
     }
+
     svg {
     position: absolute;
     top: 0;
@@ -55,6 +63,62 @@
     max-width: 100%;
     height: auto;
     }
+        
+    /* HEADER SECTION*/
+    /* Style the header with a grey background and some padding */
+    .header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    }
+
+    /* Style the header links */
+    .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    font-size: 17px;
+    /* Explore on fonts */
+    font-family: 'Sofia Sans', sans-serif;
+    line-height: 25px;
+    border-radius: 4px;
+    }
+
+    /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+    .header a.logo {
+    display: block;
+    }
+
+    /* Change the background color on mouse-over */
+    .header a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+    /* Style the active/current link*/
+    .header a.active {
+    background-color: dodgerblue;
+    color: white;
+    }
+
+    /* Float the link section to the right */
+    .header-right {
+    float: right;
+    }
+
+    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+    @media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+    }
     
     </style>
 
@@ -66,7 +130,18 @@ responsive image class
 pre {text-align: center;}
 -->
 
-<div>
+<!-- HEADER -->
+<div class="header">
+    <a href="#default" class="logo">
+        <img src="img\logo_copy.png" width="110" height="46">
+    </a>
+    <div class="header-right">
+      <a class="active" href="#home">Veri Günlüğü</a>
+      <a href="#arkaplan">Arkaplan</a>
+    </div>
+  </div>
+
+<div class="content">
     <p style="text-align:left; font-family: monospace;"> 
         6
         <span style="float:right;">
@@ -89,7 +164,7 @@ pre {text-align: center;}
 </div>
 
 
-<div>
+<div class="content">
     <p style="text-align:left; font-family: monospace;"> 
         5
         <span style="float:right;">
@@ -105,7 +180,7 @@ pre {text-align: center;}
 
 </div>
 
-<div>
+<div class="content">
 
     <p style="text-align:left; font-family: monospace;"> 
         4
@@ -124,7 +199,7 @@ pre {text-align: center;}
 
 </div>
 
-<div>
+<div class="content">
     <p style="text-align:left; font-family: monospace;"> 
         3
         <span style="float:right;">
@@ -156,7 +231,7 @@ pre {text-align: center;}
         
 </div>
 
-<div>
+<div class="content">
 
     <p style="text-align:left; font-family: monospace;"> 
         2
@@ -196,7 +271,7 @@ pre {text-align: center;}
 
 
 
-<div>
+<div class="content">
     
     <p style="text-align:left; font-family: monospace;"> 
         1
@@ -220,9 +295,7 @@ pre {text-align: center;}
 
 </div>
 
-
 </body>
-
 
 
 
